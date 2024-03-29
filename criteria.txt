@@ -1,0 +1,4 @@
+1. graduation year
+2. # absent
+3. % absent
+4. Expected late arrivals / early departures
