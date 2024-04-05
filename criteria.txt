@@ -2,3 +2,11 @@
 2. # absent
 3. % absent
 4. Expected late arrivals / early departures
+5. access control
+    LDAP queries / openLDAP
+        apache LDAP clients
+        getting information from apache server but 
+        authenication approval from external (google...)
+    debian authenication app
+
+6. get additional requests from McCallum

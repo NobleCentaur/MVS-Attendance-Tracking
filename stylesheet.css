@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family:serif;
+    font-size: 1rem;
+}
+.navBar {
+    background-color: #003b5c;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+.navButton {
+    text-decoration: none;
+    padding: 0.25rem;
+    color: white;
+}
+.navButton:hover {
+    background-color: #00283f;
+}
+.formDiv {
+    padding: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.verticalBar {
+    border-left: thick solid #ff0000;
+}
