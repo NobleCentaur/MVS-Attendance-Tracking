@@ -27,7 +27,7 @@ window.onload = function() {
     button.style.display = "none";
 
     // attendance reason loading
-    xhttp.open("GET", "query.php?value1=3&value2=null",false);
+    xhttp.open("POST", "query.php?value1=3&value2=null",false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0;i < response.length; i++) {
@@ -38,7 +38,7 @@ window.onload = function() {
     }
 
     // graduation year loading
-    xhttp.open("GET", "query.php?value1=1&value2=null", false);
+    xhttp.open("POST", "query.php?value1=1&value2=null", false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0;i < response.length; i++) {
@@ -52,7 +52,7 @@ window.onload = function() {
         nameSel.length = 1;
         selection = graduationSel.value;
 
-        xhttp.open("GET", "query.php?value1=2&value2="+selection, false);
+        xhttp.open("POST", "query.php?value1=2&value2="+selection, false);
         xhttp.send();
         response = JSON.parse(xhttp.responseText);
         
@@ -87,7 +87,7 @@ window.onload = function() {
         graduationSel.value = "default";
 
         selection = graduationSel.value;
-        xhttp.open("GET", "query.php?value1=4&value2=null", false);
+        xhttp.open("POST", "query.php?value1=4&value2=null", false);
         xhttp.send();
         response = JSON.parse(xhttp.responseText);
 
@@ -110,7 +110,7 @@ window.onload = function() {
     const missing_students = document.getElementById("missing_students");
 
     // absences loading
-    xhttp.open("GET", "query.php?value1=4&value2=null", false);
+    xhttp.open("POST", "query.php?value1=4&value2=null", false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0 ; i < response.length ; i++) {
@@ -122,10 +122,10 @@ window.onload = function() {
     }
 
     const absencePercent = document.getElementById("absencePercent");
-    xhttp.open("GET", "query.php?value1=8&value2=null", false);
+    xhttp.open("POST", "query.php?value1=8&value2=null", false);
     xhttp.send();
     absences = JSON.parse(xhttp.responseText);
-    xhttp.open("GET", "query.php?value1=9&value2=null", false);
+    xhttp.open("POST", "query.php?value1=9&value2=null", false);
     xhttp.send();
     students = JSON.parse(xhttp.responseText);
     var percentAttendance = 100 - ((absences.length / students.length) * 100)
@@ -157,7 +157,7 @@ window.onload = function() {
     plan_submit.style.display = "none";
 
     // attendance reason loading
-    xhttp.open("GET", "query.php?value1=3&value2=null",false);
+    xhttp.open("POST", "query.php?value1=3&value2=null",false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0;i < response.length; i++) {
@@ -168,7 +168,7 @@ window.onload = function() {
     }
 
     // graduation year loading
-    xhttp.open("GET", "query.php?value1=1&value2=null", false);
+    xhttp.open("POST", "query.php?value1=1&value2=null", false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0;i < response.length; i++) {
@@ -182,7 +182,7 @@ window.onload = function() {
         plan_nameSel.length = 1;
         selection = plan_graduationSel.value;
 
-        xhttp.open("GET", "query.php?value1=5&value2="+selection, false);
+        xhttp.open("POST", "query.php?value1=5&value2="+selection, false);
         xhttp.send();
         response = JSON.parse(xhttp.responseText);
         
@@ -233,7 +233,7 @@ window.onload = function() {
     let currentDate = new Date().toJSON().slice(0, 10);
 
     // absences loading
-    xhttp.open("GET", "query.php?value1=6&value2=null", false);
+    xhttp.open("POST", "query.php?value1=6&value2=null", false);
     xhttp.send();
     response = JSON.parse(xhttp.responseText);
     for (var i = 0 ; i < response.length ; i++) {
@@ -264,6 +264,12 @@ window.onload = function() {
             cell.appendChild(content);
         } else {
             console.log(response[i]["end_date"]);
+        }
+    }
+
+    submitConfirm = function(form) {
+        if (confirm("Are you sure? This will reset all live absences and should only be done in the mornings.")) {
+            form.submit();
         }
     }
 }

@@ -14,8 +14,10 @@
             <a href="admin.html" class="navButton">Admin</a>
             <hr>
             <div style="font-size: 1rem;">
-                Admin Page
-                <input type="button" id="absenceClear" value="clear absences">
+                Admin Page 
+                <form action="DANGER.php" style="display: inline;">
+                    <input type="button" id="absenceClear" value="clear absences" onclick="submitConfirm(this.form)">
+                </form>
             </div>
         </div>
         <div class="navBarData">
