@@ -1,12 +1,16 @@
-1. graduation year
+TO DO:
+
 2. # absent
-3. % absent
-4. Expected late arrivals / early departures
 5. access control
-    LDAP queries / openLDAP
+
+    *maybe later*
+    
+    LDAP queries / openLDAP 
         apache LDAP clients
         getting information from apache server but 
         authenication approval from external (google...)
     debian authenication app
-
-6. get additional requests from McCallum
+8. add a way / automation to reset the absences table every morning 8:05
+    maybe just a button to clear absences
+10. teachers absent and who's covering them
+12. automatic email when someone reaches 3 absences

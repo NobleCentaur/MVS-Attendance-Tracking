@@ -9,17 +9,46 @@
 </head>
 <body>
     <div class="navBar">
-        <a href="home.html" class="navButton">Home</a>
-        <a href="admin.html" class="navButton">Admin</a>
-        <hr>
-        <div style="font-size: 1rem; ">
-            Home Page
+        <div style="width: 80%; float: left;">
+            <a href="home.html" class="navButton">Home</a>
+            <a href="admin.html" class="navButton">Admin</a>
+            <hr>
+            <div style="font-size: 1rem;">
+                Home page
+            </div>
+        </div>
+        <div class="navBarData">
+            <div id="absencePercent">
+                ----
+            </div>
         </div>
     </div>
-    <div class="formDiv" id="formDiv">
-        Current absences:
-        <hr>
-        <div id="missing_students"></div>
+    <div class="formDiv">
+        <div style="width: 47.5%; margin-right: 5%; float: left;">
+            Current absences:
+            <hr>
+            <table id="home-table">
+                <tr style="font-style: italic;">
+                    <td>Freshmen</td>
+                    <td>Sophomores</td>
+                    <td>Juniors</td>
+                    <td>Seniors</td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 47.5%; float: left;">
+            Planned absences:
+            <hr>
+            <table id="plan-table">
+                <tr style="font-style: italic;">
+                    <td>Student</td>
+                    <td>Days (y-m-d)</td>
+                    <td>Time in</td>
+                    <td>Time out</td>
+                    <td>Reason</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

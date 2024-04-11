@@ -17,16 +17,20 @@ $timeNow = date("H:i");
 if ($attendance_type == "late") {
     $queries = 2;
     $sql = "INSERT INTO attendance_history (student, date, time_in, reason)
-            6VALUES ('$student', '$dateToday', '$timeNow', '$reason')";
+            VALUES ('$student', '$dateToday', '$timeNow', '$reason')";
     $sql1 = "DELETE FROM absences WHERE student = $student";
 } elseif ($attendance_type == "early") {
     $queries = 2;
     $sql = "INSERT INTO attendance_history (student, date, time_out, reason)
-    VALUES ('$student', '$dateToday', '$timeNow', '$reason')";
+            VALUES ('$student', '$dateToday', '$timeNow', '$reason')";
     $sql1 = "INSERT INTO absences VALUES ($student)";   
 } elseif ($attendance_type == "missing") {
-    $queries = 1;
+    $queries = 2;
     $sql = "INSERT INTO absences VALUES ($student)";
+    $sql1 = "INSERT INTO attendance_history (student, date)
+             VALUES ('$student', '$dateToday')";
+} else {
+    echo $attendance_type;
 }
 
 $conn = new mysqli($servername, $username, $password, $database);
