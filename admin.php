@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ($_SESSION['user_id'] != "mvsadmin") {
+    header('location: login.html');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +17,8 @@
 <body>
     <div class="navBar">
         <div style="width: 80%; float: left;">
-            <a href="home.html" class="navButton">Home</a>
-            <a href="admin.html" class="navButton">Admin</a>
+            <a href="index.html" class="navButton">Home</a>
+            <a href="admin.php" class="navButton">Admin</a>
             <hr>
             <div style="font-size: 1rem;">
                 Admin Page 

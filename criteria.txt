@@ -1,6 +1,5 @@
 TO DO:
 
-2. # absent
 5. access control
 
     *maybe later*
@@ -10,7 +9,6 @@ TO DO:
         getting information from apache server but 
         authenication approval from external (google...)
     debian authenication app
-8. add a way / automation to reset the absences table every morning 8:05
-    maybe just a button to clear absences
-10. teachers absent and who's covering them
-12. automatic email when someone reaches 3 absences
+
+13. fix passwords stored in plain text on the php files.
+    * just relocate the php files to somewhere else
