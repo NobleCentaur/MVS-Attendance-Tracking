@@ -1,5 +1,5 @@
 <?php
-header("Location: admin.html");
+header("Location: admin.php");
 date_default_timezone_set("America/New_York");
 
 $servername = "localhost";
@@ -41,6 +41,9 @@ $conn->query($sql);
 if ($queries > 1) {
     $conn->query($sql1);
 }
+
+session_start();
+$_SESSION['verification'] = "C98W58~i)'K6pVv_BBD6Si6.uy1zBrQrI8kI=Wep@6kOIZ2?`f";
 
 $conn->close();
 ?>

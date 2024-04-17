@@ -1,9 +1,9 @@
 <?php
-session_start();
 $servername = "localhost";
 $username = "loginUser";
 $password = "y1i2BkU1IjCXCe7p56lG";
 $database = "loginserver";
+$_SESSION['user_id'] = null;
 
 $conn = new mysqli($servername, $username, $password, $database);
 $username = $_POST['username'];
@@ -15,7 +15,8 @@ $sql = "SELECT userID
 
 $result = $conn->query($sql);
 if (mysqli_num_rows($result) == 1)  {
-    $_SESSION['user_id'] = $username;
+    session_start();
+    $_SESSION['verification'] = "C98W58~i)'K6pVv_BBD6Si6.uy1zBrQrI8kI=Wep@6kOIZ2?`f";
     header('location: admin.php');
     exit;
 } else {

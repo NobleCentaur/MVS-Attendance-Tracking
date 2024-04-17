@@ -1,10 +1,12 @@
 <?php
 session_start();
-if ($_SESSION['user_id'] != "mvsadmin") {
+if ($_SESSION['verification'] != "C98W58~i)'K6pVv_BBD6Si6.uy1zBrQrI8kI=Wep@6kOIZ2?`f") {
     header('location: login.html');
     exit;
 }
+session_destroy();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
