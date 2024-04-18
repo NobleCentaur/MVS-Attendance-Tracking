@@ -12,7 +12,7 @@ window.onload = function() {
     students = JSON.parse(xhttp.responseText);
     var percentAttendance = 100 - ((absences.length / students.length) * 100)
 
-    absencePercent.innerHTML = percentAttendance + "% attendance"
+    absencePercent.innerHTML = Math.round(percentAttendance*100)/100 + "% attendance"
 
     // get all freshmen
     xhttp.open("GET", "query.php?value1=7&value2="+(currentYear+3), false);

@@ -128,8 +128,7 @@ window.onload = function() {
     xhttp.open("POST", "query.php?value1=9&value2=null", false);
     xhttp.send();
     students = JSON.parse(xhttp.responseText);
-    var percentAttendance = 100 - ((absences.length / students.length) * 100)
-
+    var percentAttendance = (100 - ((absences.length / students.length) * 100));
     absencePercent.innerHTML = percentAttendance + "% attendance"
 
     /*
