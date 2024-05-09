@@ -1,15 +1,45 @@
-Current functionality:
+This page provides an overview of all the features of this website and 
+Home Page
+--------------------
+* Displays current absences, fetched with query.php #7
+* Displays expected/planned absences with query.php #6
+* Displays current attendance percentage rounded to 2 decimal places by comparing query.php #8 to query.php #9
 
-  Home page - only displays listed absences
-  
-  Admin page - allows the admin to enter the following new attendance entries
+Login Page
+--------------------
+* Includes username and password for mvsadmin
+* Uses loginVerify.php to verify credentials by returning the entered data if it matches the database
 
-    Missing - adds students to the list of current absences, for students who don't arrive on time to school without.
-    Late arrival - resolves current missing students and adds an entry to the attendance history
-    Early departure - adds student to the list of current absences, and adds an entry to the attendance history
+Admin Page
+----------------------
+* Clear absences button to clear current abscenes using DANGER.php
+* **New entry section**
+	* All sections
+		* Absence reason loaded by query.php #3
+		* Adds to attendance_history with newEntry.php with corresponding attendance type
+	* Early departures fields
+		* Graduation year to filter student selection using query.php #1
+		* Student list filtered by graduation year using query.php #2
+	* Late arrival fields
+		* Currently absent students using query.php #4
+	* Absent student fields
+		* Graduation year to filter student selection using query.php #1
+		* Student list filtered by graduation year using query.php #2
+* **New planned absence section**
+	* All sections
+		* Graduation year to filter student selection using query.php #1
+		* Student list filtered by graduation year using query.php #2
+		* Absence reason loaded by query.php #3
+		* Date field html form element
+		* Adds to absence_plan using newPlan.php and corresponding plan type
+	* All day absence fields
+		* Includes only the above listed parameters
+	* Leaving early/Arriving late
+		* Time field html form element
 
-Planned functionality:
-
-  Home page - list planned absences and absence permission
-
-  Admin page - add and view planned absences
+Navigation Bar (All pages)
+----------------------------------------------
+* Home page link
+* Admin Page link
+* Displays current page
+* Absence percent
