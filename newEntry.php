@@ -1,5 +1,5 @@
 <?php
-header("Location: admin.php");
+header("Location: admin-reference.php");
 date_default_timezone_set("America/New_York");
 
 $servername = "localhost";

@@ -12,19 +12,21 @@ session_destroy();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MVS Attendance (Admin)</title>
     <script src="absences.js"></script>
+    <link rel="icon" type="image/x-icon" href="/tree.svg">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <div class="navBar">
         <div style="width: 80%; float: left;">
             <a href="index.html" class="navButton">Home</a>
-            <a href="admin.php" class="navButton">Admin</a>
+            <a href="https://forms.gle/1s2GSvk9QByfKrUQ7" class="navButton">Feedback</a>
+	    <a href="admin-reference.php" class="navButton">Admin</a>
             <hr>
             <div style="font-size: 1rem;">
                 Admin Page 
-                <form action="DANGER.php" style="display: inline;">
+                <form action="DANGER-reference.php" style="display: inline;">
                     <input type="button" id="absenceClear" value="clear absences" onclick="submitConfirm(this.form)">
                 </form>
             </div>
@@ -39,7 +41,7 @@ session_destroy();
         <div style="width: 27.5%; float: left; padding-right: 5%; height: 100%;">
             New entry: 
             <hr>
-            <form action="newEntry.php" method="POST">
+            <form action="newEntry-reference.php" method="POST">
                 <input type="radio" id="early" value="early" name="attendance_type">
                 <label for="early">Early departure</label>
                 <input type="radio" id="late" value="late" name="attendance_type">
@@ -69,7 +71,7 @@ session_destroy();
         <div style="width: 27.5%; float: left; padding-right: 5%; height: 100%;">
             New planned absence:
             <hr>
-            <form action="newPlan.php" method="post">
+            <form action="newPlan-reference.php" method="post">
                 <input type="radio" id="all_day" value="all_day" name="plan-type">
                 <label for="all_day">All day</label>
                 <input type="radio" id="plan-early" value="plan-early" name="plan-type">

@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 if (mysqli_num_rows($result) == 1)  {
     session_start();
     $_SESSION['verification'] = "C98W58~i)'K6pVv_BBD6Si6.uy1zBrQrI8kI=Wep@6kOIZ2?`f";
-    header('location: admin.php');
+    header('location: admin-reference.php');
     exit;
 } else {
     header('location: index.html');

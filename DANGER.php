@@ -1,5 +1,5 @@
 <?php
-header("Location: admin.php");
+header("Location: admin-reference.php");
 
 $servername = "localhost";
 $username = "phpUser";
