@@ -1,4 +1,10 @@
-This page provides an overview of all the features of this website and how they work on the backend.
+Overview
+-----------------
+This page provides an overview of all the features of this website and how they work in technical detail and in general.
+
+The home page is for general access and use by the teachers and whoever else needs to access attendance info. It includes no capability to modify, add, or remove any attendance data and is not password locked but is only accessible through MVS Secure.
+
+The admin page is only for the secretary and authorized users who need to change attendance data. Getting to this page requires you to go through a login page first. Here, you can add and resolve current absences to be displayed on the home page in addition to planned absences. First you select the type of attendance entry you would like to submit, choose the student's grade level, the student, then the absence reason, and finally any additional parameters specific to the entry you are making.
 
 Home Page
 --------------------
