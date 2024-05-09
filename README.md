@@ -1,4 +1,5 @@
-This page provides an overview of all the features of this website and 
+This page provides an overview of all the features of this website and how they work on the backend.
+
 Home Page
 --------------------
 * Displays current absences, fetched with query.php #7
