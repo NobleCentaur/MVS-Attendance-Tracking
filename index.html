@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVS Attendance</title>
+    <script src="home.js"></script>
+    <link rel="icon" type="image/x-icon" href="/tree.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="navBar">
+        <div style="width: 80%; float: left;">
+            <a href="index.html" class="navButton">Home</a>
+            <a href="https://forms.gle/1s2GSvk9QByfKrUQ7" class="navButton">Feedback</a>
+	    <a href="admin-reference.php" class="navButton">Admin</a>
+            <hr>
+            <div style="font-size: 1rem;">
+                Home page
+            </div>
+        </div>
+        <div class="navBarData">
+            <div id="absencePercent">
+                ----
+            </div>
+        </div>
+    </div>
+    <div class="formDiv">
+        <div style="width: 47.5%; margin-right: 5%; float: left;">
+            Current absences:
+            <hr>
+            <table id="home-table">
+                <tr style="font-style: italic;">
+                    <td>Freshmen</td>
+                    <td>Sophomores</td>
+                    <td>Juniors</td>
+                    <td>Seniors</td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 47.5%; float: left;">
+            Planned absences:
+            <hr>
+            <table id="plan-table">
+                <tr style="font-style: italic;">
+                    <td>Student</td>
+                    <td>Days (y-m-d)</td>
+                    <td>Time in</td>
+                    <td>Time out</td>
+                    <td>Reason</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

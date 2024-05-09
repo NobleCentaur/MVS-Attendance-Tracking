@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVS Attendance</title>
+    <link rel="icon" type="image/x-icon" href="/tree.svg">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="navBar">
+        <div style="width: 80%; float: left;">
+            <a href="index.html" class="navButton">Home</a>
+	    <a href="https://forms.gle/1s2GSvk9QByfKrUQ7" class="navButton">Feedback</a>
+            <a href="admin-reference.php" class="navButton">Admin</a>
+            <hr>
+            <div style="font-size: 1rem;">
+                Login for admin page
+            </div>
+        </div>
+        <div class="navBarData">
+            <div id="absencePercent">
+                ----
+            </div>
+        </div>
+    </div>
+    <div class="loginDiv">
+        Login:
+        <form action="loginVerify-reference.php" method="post">
+            <input type="text" name="username" id="username" placeholder="user name">
+            <br>
+            <input type="password" name="password" id="password" placeholder="password">
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+TO DO:
+
+5. access control
+
+    *maybe later*
+    
+    LDAP queries / openLDAP 
+        apache LDAP clients
+        getting information from apache server but 
+        authenication approval from external (google...)
+    debian authenication app
+
+13. fix passwords stored in plain text on the php files.
+    * just relocate the php files to somewhere else
