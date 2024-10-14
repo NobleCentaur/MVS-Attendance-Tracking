@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "phpUser";
-$password = "F3kGVpEBNw4YA#Z";
-$database = "attendancedb";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 $myArray = array();
 $queryID = $_GET["value1"];
 $constraint = $_GET["value2"];
