@@ -1,10 +1,10 @@
 <?php
 header("Location: admin-reference.php");
 
-$servername = "localhost";
-$username = "phpUser";
-$password = "F3kGVpEBNw4YA#Z";
-$database = "attendancedb";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 
 $sql = "DELETE FROM absences 
         WHERE absences.student > 0";
