@@ -2,10 +2,10 @@
 header("Location: admin-reference.php");
 date_default_timezone_set("America/New_York");
 
-$servername = "localhost";
-$username = "phpUser";
-$password = "F3kGVpEBNw4YA#Z";
-$database = "attendancedb";
+$servername = "";
+$username = "";
+$password = "";
+$database = "";
 $myArray = array();
 $plan_type = $_POST["plan-type"];
 $student = $_POST["plan-full_name"];
